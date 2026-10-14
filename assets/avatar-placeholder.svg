@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Foto de perfil placeholder de Jean Machado">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a2947"/>
+      <stop offset="100%" stop-color="#141f38"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d1a1"/>
+      <stop offset="100%" stop-color="#5b8cff"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <circle cx="200" cy="200" r="150" fill="none" stroke="url(#ring)" stroke-width="4" stroke-dasharray="8 10" opacity="0.6"/>
+  <circle cx="200" cy="165" r="62" fill="#0f1830" stroke="#253356" stroke-width="2"/>
+  <path d="M200 227 c-70 0 -110 40 -110 95 l220 0 c0 -55 -40 -95 -110 -95 z" fill="#0f1830" stroke="#253356" stroke-width="2"/>
+  <text x="200" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="44" fill="#34d1a1">JM</text>
+</svg>

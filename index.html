@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jean Machado | Desenvolvimento Web &amp; Automação</title>
+  <meta name="description" content="Landing page pessoal de Jean Machado — estudante de Ciência da Computação na UVV, com experiência em automação/RPA e foco em DevOps, segurança e infraestrutura.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="nav-brand"><span class="dot">●</span> Jean Machado</a>
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="curriculo.html">Currículo</a></li>
+        <li><a href="github.html">GitHub</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" style="border-top:none;">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">Ciência da Computação — UVV</p>
+        <h1>Olá, eu sou o Jean.<br>Construo automações e páginas web com propósito.</h1>
+        <p class="lead">
+          Estudante de Ciência da Computação, atuo na Rede Gazeta com automação de processos (RPA)
+          e estou direcionando minha carreira para DevOps, segurança e infraestrutura — com o
+          objetivo de atuar no mercado internacional, especialmente na Europa.
+        </p>
+        <div class="hero-actions">
+          <a href="#trajetoria" class="btn btn-primary">Conheça minha trajetória ↓</a>
+          <a href="servicos.html" class="btn btn-ghost">Ver serviços de sites</a>
+        </div>
+      </div>
+      <div>
+        <div class="avatar-frame">
+          <!-- Coloque sua foto em assets/foto.jpg. Se o arquivo não existir, aparece o avatar padrão. -->
+          <img src="assets/foto.jpg" alt="Foto de Jean Machado" onerror="this.onerror=null;this.src='assets/avatar-placeholder.svg';">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= VÍDEO DE APRESENTAÇÃO ================= -->
+  <section aria-labelledby="video-titulo">
+    <div class="container">
+      <h2 id="video-titulo">Um pouco sobre mim, em vídeo</h2>
+      <p class="section-intro">
+        Apresentação rápida de quem eu sou e das áreas em que estou focando meus estudos.
+      </p>
+      <div class="media-block">
+        <video controls preload="metadata" poster="assets/video-poster.jpg">
+          <source src="assets/intro-video.mp4" type="video/mp4">
+          Seu navegador não suporta vídeo em HTML5.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= HISTÓRIA / OBJETIVOS ================= -->
+  <section id="trajetoria" aria-labelledby="historia-titulo">
+    <div class="container">
+      <h2 id="historia-titulo">Minha história e objetivos profissionais</h2>
+      <p class="section-intro">
+        Sempre me interessei por entender como as coisas funcionam por trás da tela. Esse interesse
+        me levou da automação de tarefas repetitivas no trabalho até o desejo de dominar a infraestrutura
+        que sustenta sistemas modernos — contêineres, nuvem, segurança e conformidade.
+      </p>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Hoje</h3>
+          <p>
+            Trabalho na Rede Gazeta, onde atuo com automação de processos utilizando Power Automate
+            Desktop (RPA), incluindo integrações com listas do SharePoint. Ao mesmo tempo, curso
+            Ciência da Computação na UVV.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Objetivo profissional</h3>
+          <p>
+            Migrar de automação de processos para uma atuação mais próxima de DevOps, segurança e
+            infraestrutura — trabalhando com ferramentas como Kubernetes e Terraform, e temas como
+            conformidade (LGPD/GDPR, ISO 27001).
+          </p>
+        </div>
+        <div class="card">
+          <h3>Onde quero chegar</h3>
+          <p>
+            Meu objetivo de médio prazo é atuar no mercado internacional, com foco no mercado europeu,
+            onde competências de infraestrutura como código e conformidade têm forte demanda.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= HABILIDADES ================= -->
+  <section aria-labelledby="habilidades-titulo">
+    <div class="container">
+      <h2 id="habilidades-titulo">Habilidades pessoais e técnicas</h2>
+      <p class="section-intro">Resumo do que sei fazer hoje e do que venho aprofundando nos estudos.</p>
+
+      <div class="table-wrap">
+        <table>
+          <caption>Tabela 1 — Habilidades e nível de experiência</caption>
+          <thead>
+            <tr>
+              <th scope="col">Habilidade</th>
+              <th scope="col">Nível</th>
+              <th scope="col">Contexto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Automação de processos (RPA) / Power Automate Desktop</td>
+              <td>Intermediário</td>
+              <td>Uso profissional na Rede Gazeta, incluindo integração com SharePoint</td>
+            </tr>
+            <tr>
+              <td>HTML, CSS e desenvolvimento web</td>
+              <td>Em desenvolvimento</td>
+              <td>Disciplinas de Desenvolvimento de Software para Web — UVV</td>
+            </tr>
+            <tr>
+              <td>Infraestrutura como código (Terraform) e Kubernetes</td>
+              <td>Iniciante / em estudo</td>
+              <td>Pesquisa aplicada ao Projeto de Graduação (TCC)</td>
+            </tr>
+            <tr>
+              <td>Segurança e conformidade (LGPD, GDPR, ISO 27001)</td>
+              <td>Em estudo</td>
+              <td>Tema central do TCC — compliance-as-code e segurança de cadeia de suprimentos</td>
+            </tr>
+            <tr>
+              <td>Organização e planejamento</td>
+              <td>Forte</td>
+              <td>Planejamento de grade curricular e cronograma de TCC ao longo de dois semestres</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="tags">
+        <span class="tag">Comunicação</span>
+        <span class="tag">Resolução de problemas</span>
+        <span class="tag">Autodidatismo</span>
+        <span class="tag">Trabalho em equipe</span>
+        <span class="tag">Adaptabilidade</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PESSOAL / HOBBIES ================= -->
+  <section aria-labelledby="pessoal-titulo">
+    <div class="container">
+      <h2 id="pessoal-titulo">Fora do teclado</h2>
+      <p class="section-intro">Um pouco do que gosto de fazer quando não estou estudando ou automatizando processos.</p>
+      <div class="card-grid">
+        <div class="card">
+          <h3>🎧 Música</h3>
+          <p>Gosto de ouvir podcasts de tecnologia e playlists instrumentais para focar durante os estudos.</p>
+        </div>
+        <div class="card">
+          <h3>🎮 Games</h3>
+          <p>Jogos de estratégia e simulação, que ajudam a exercitar raciocínio lógico e planejamento.</p>
+        </div>
+        <div class="card">
+          <h3>🥾 Ar livre</h3>
+          <p>Caminhadas e trilhas nos fins de semana, uma forma de desconectar da tela por algumas horas.</p>
+        </div>
+        <div class="card">
+          <h3>📚 Leitura</h3>
+          <p>Ficção científica e conteúdos sobre tecnologia, cultura DevOps e segurança da informação.</p>
+        </div>
+        <div class="card">
+          <h3>⚽ Futebol</h3>
+          <p>Acompanho os jogos de fim de semana com amigos, mais como programa social do que rivalidade séria.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= VIDA ACADÊMICA ================= -->
+  <section aria-labelledby="academica-titulo">
+    <div class="container">
+      <h2 id="academica-titulo">Vida acadêmica</h2>
+      <p class="section-intro">Um resumo da minha trajetória escolar até o momento atual da graduação.</p>
+
+      <ul class="timeline">
+        <li>
+          <span class="when">Ensino Fundamental I e II</span>
+          <h3>Educação básica</h3>
+          <p>Fundamental I (1º ao 5º ano) e Fundamental II (6º ao 9º ano) em escola regular, com o primeiro contato com informática e o interesse por tecnologia.</p>
+        </li>
+        <li>
+          <span class="when">Ensino Médio</span>
+          <h3>Formação geral</h3>
+          <p>Ensino Médio completo (3 anos), período em que o interesse por lógica, exatas e computação se consolidou. Paralelamente, cursos livres e autoestudo de lógica de programação, Git/GitHub, Power Automate e AWS.</p>
+        </li>
+        <li>
+          <span class="when">Graduação — em andamento</span>
+          <h3>Ciência da Computação — UVV (Universidade Vila Velha)</h3>
+          <p>
+            Cursando atualmente disciplinas como Laboratório de Engenharia de Software e outras pendências
+            do currículo, além de desenvolver o Projeto de Graduação (TCC), com foco em compliance-as-code
+            (LGPD), segurança de cadeia de suprimentos para módulos públicos de infraestrutura como código
+            e hardening de imagens de contêiner.
+          </p>
+        </li>
+        <li>
+          <span class="when">Próximos passos</span>
+          <h3>Especialização e mercado internacional</h3>
+          <p>
+            Concluir a graduação, finalizar o TCC e aprofundar conhecimentos em DevOps, nuvem e segurança,
+            com o objetivo de atuar no mercado europeu.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================= EVENTOS / MATÉRIAS ================= -->
+  <section aria-labelledby="eventos-titulo">
+    <div class="container">
+      <h2 id="eventos-titulo">Eventos, trabalhos acadêmicos e disciplinas atuais</h2>
+
+      <div class="card-grid">
+        <div class="card">
+          <h3>Trabalhos acadêmicos e eventos</h3>
+          <ul>
+            <li>Apresentações de trabalhos e seminários nas disciplinas do curso, além de palestras e workshops de tecnologia (presenciais e online).</li>
+            <li>Pesquisa empírica de mercado para embasar o tema do TCC, usando vagas reais do mercado europeu e fóruns de tecnologia.</li>
+            <li>Proposta de TCC em português e cronograma de dois semestres (cerca de 440 horas de dedicação).</li>
+            <li>Esta landing page, desenvolvida na disciplina de Desenvolvimento de Software para Web.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Disciplinas deste semestre</h3>
+          <ul>
+            <li><strong>Desenvolvimento de Software para Web</strong> — fundamentos de HTML e CSS para construir páginas responsivas e bem organizadas.</li>
+            <li><strong>Laboratório de Engenharia de Software</strong> — prática de desenvolvimento em equipe: requisitos, modelagem, versionamento e testes.</li>
+            <li><strong>Projeto de Graduação (TCC)</strong> — pesquisa aplicada sobre compliance-as-code (LGPD) e segurança de infraestrutura como código.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LINKS RELACIONADOS ================= -->
+  <section aria-labelledby="links-titulo">
+    <div class="container">
+      <h2 id="links-titulo">Continue navegando</h2>
+      <p class="section-intro">Veja meu currículo formal, meus projetos no GitHub ou os serviços que ofereço.</p>
+      <div class="hero-actions">
+        <a href="curriculo.html" class="btn btn-primary">Ver currículo</a>
+        <a href="github.html" class="btn btn-ghost">Meu GitHub</a>
+        <a href="servicos.html" class="btn btn-ghost">Serviços de sites</a>
+        <a href="contato.html" class="btn btn-ghost">Fale comigo</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <p>&copy; 2026 Jean Machado — Trabalho acadêmico de Desenvolvimento de Software para Web (UVV).</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="curriculo.html">Currículo</a>
+        <a href="github.html">GitHub</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="contato.html">Contato</a>
+        <a href="#top" class="back-to-top">↑ Voltar ao topo</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

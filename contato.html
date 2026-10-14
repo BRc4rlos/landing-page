@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato | Jean Machado</title>
+  <meta name="description" content="Fale com Jean Machado para solicitar orçamento de site, tirar dúvidas ou propor parcerias.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="nav-brand"><span class="dot">●</span> Jean Machado</a>
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="curriculo.html">Currículo</a></li>
+        <li><a href="github.html">GitHub</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="hero" style="border-top:none; padding-bottom:24px;">
+    <div class="container">
+      <p class="eyebrow">Contato</p>
+      <h1>Vamos conversar</h1>
+      <p class="lead">
+        Tem interesse em um site, quer trocar uma ideia sobre tecnologia ou tem alguma proposta?
+        Preencha o formulário abaixo ou use um dos canais de contato.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= CANAIS DE CONTATO ================= -->
+  <section aria-labelledby="canais-titulo">
+    <div class="container">
+      <h2 id="canais-titulo">Canais diretos</h2>
+      <div class="contact-info-grid">
+        <div class="card">
+          <h3>💻 GitHub</h3>
+          <p><a href="https://github.com/brc4rlos" target="_blank" rel="noopener noreferrer">github.com/brc4rlos</a></p>
+        </div>
+        <div class="card">
+          <h3>🕒 Horário de atendimento</h3>
+          <p>Segunda a sexta, das 9h às 18h (horário de Brasília).</p>
+        </div>
+      </div>
+
+      <div class="media-block">
+        <h3 style="margin-top:0; color:var(--accent);">🔔 Som de confirmação</h3>
+        <p class="form-note">Prévia em áudio usada como assinatura sonora nesta landing page.</p>
+        <audio controls preload="none">
+          <source src="assets/audio-preview.mp3" type="audio/mpeg">
+          Seu navegador não suporta áudio em HTML5.
+        </audio>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FORMULÁRIO ================= -->
+  <section aria-labelledby="form-titulo">
+    <div class="container">
+      <h2 id="form-titulo">Solicitar orçamento / falar comigo</h2>
+      <p class="section-intro">Quanto mais detalhes você informar, mais rápido consigo retornar com uma proposta.</p>
+
+      <form id="form-contato" action="#" method="post">
+
+        <div class="form-row">
+          <div>
+            <label for="nome">Nome completo <span class="req">*</span></label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+          </div>
+          <div>
+            <label for="telefone">Telefone <span class="req">*</span></label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(27) 90000-0000" pattern="\(?\d{2}\)?\s?9?\d{4}[\s\-]?\d{4}" title="Use o formato (27) 99999-0000" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div>
+            <label for="email">E-mail <span class="req">*</span></label>
+            <input type="email" id="email" name="email" placeholder="voce@exemplo.com" required>
+          </div>
+          <div>
+            <label for="melhor-horario">Melhor horário para contato</label>
+            <select id="melhor-horario" name="melhor_horario">
+              <option value="">Selecione…</option>
+              <option value="manha">Manhã (8h–12h)</option>
+              <option value="tarde">Tarde (12h–18h)</option>
+              <option value="noite">Noite (18h–21h)</option>
+              <option value="qualquer">Qualquer horário</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <fieldset>
+            <legend>Pessoa física ou jurídica? <span class="req">*</span></legend>
+            <div class="radio-group">
+              <label><input type="radio" name="tipo_pessoa" value="fisica" required> Pessoa física</label>
+              <label><input type="radio" name="tipo_pessoa" value="juridica"> Pessoa jurídica</label>
+            </div>
+          </fieldset>
+
+          <div>
+            <label for="data-preferida">Data preferida para retorno (opcional)</label>
+            <input type="date" id="data-preferida" name="data_preferida">
+          </div>
+        </div>
+
+        <div>
+          <label for="tipo-servico">Qual tipo de serviço você deseja? <span class="req">*</span></label>
+          <select id="tipo-servico" name="tipo_servico" required>
+            <option value="">Selecione uma opção…</option>
+            <option value="estatica-1-2">Página estática (1 a 2 páginas)</option>
+            <option value="estatica-3-5">Página estática (3 a 5 páginas)</option>
+            <option value="estatica-5mais">Página estática (mais de 5 páginas)</option>
+            <option value="dinamica">Página dinâmica</option>
+            <option value="avancado">Projeto avançado</option>
+            <option value="outro">Outro / não sei ainda</option>
+          </select>
+        </div>
+
+        <fieldset>
+          <legend>Recursos de interesse (selecione quantos quiser)</legend>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="recursos" value="formulario"> Formulário de contato</label>
+            <label><input type="checkbox" name="recursos" value="cms"> Blog / gerenciador de conteúdo</label>
+            <label><input type="checkbox" name="recursos" value="loja"> Loja virtual</label>
+            <label><input type="checkbox" name="recursos" value="redes"> Integração com redes sociais</label>
+            <label><input type="checkbox" name="recursos" value="seo"> Otimização para buscadores (SEO)</label>
+          </div>
+        </fieldset>
+
+        <div>
+          <label for="descricao">Breve descrição do que deseja contratar <span class="req">*</span></label>
+          <textarea id="descricao" name="descricao" placeholder="Conte um pouco sobre seu projeto, prazo desejado e referências que gosta…" required></textarea>
+        </div>
+
+        <div>
+          <label><input type="checkbox" name="aceite" required> Concordo em ser contatado(a) sobre este pedido de orçamento. <span class="req">*</span></label>
+          <p class="form-note" style="margin-top:8px;">Os dados informados serão usados apenas para responder a este pedido, conforme a LGPD, e não serão compartilhados com terceiros.</p>
+        </div>
+
+        <div>
+          <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+          <p id="form-feedback" class="form-note" style="margin-top:12px;" role="status"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <p>&copy; 2026 Jean Machado — Trabalho acadêmico de Desenvolvimento de Software para Web (UVV).</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="curriculo.html">Currículo</a>
+        <a href="github.html">GitHub</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="contato.html">Contato</a>
+        <a href="#top" class="back-to-top">↑ Voltar ao topo</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

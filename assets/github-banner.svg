@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300" width="500" height="300" role="img" aria-label="Ilustração representando um histórico de commits em um repositório de código">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a2947"/>
+      <stop offset="100%" stop-color="#0f1830"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="300" rx="20" fill="url(#bg2)" stroke="#253356" stroke-width="2"/>
+
+  <!-- linha principal (branch main) -->
+  <line x1="70" y1="150" x2="430" y2="150" stroke="#5b8cff" stroke-width="3"/>
+  <!-- branch secundária -->
+  <path d="M170 150 C 210 150, 210 90, 250 90 L 330 90" stroke="#34d1a1" stroke-width="3" fill="none"/>
+  <path d="M330 90 C 360 90, 360 150, 390 150" stroke="#34d1a1" stroke-width="3" fill="none"/>
+
+  <!-- commits na main -->
+  <circle cx="90" cy="150" r="9" fill="#5b8cff"/>
+  <circle cx="170" cy="150" r="9" fill="#5b8cff"/>
+  <circle cx="390" cy="150" r="9" fill="#5b8cff"/>
+  <circle cx="410" cy="150" r="9" fill="#5b8cff"/>
+
+  <!-- commits na branch -->
+  <circle cx="250" cy="90" r="9" fill="#34d1a1"/>
+  <circle cx="330" cy="90" r="9" fill="#34d1a1"/>
+
+  <!-- janela de terminal -->
+  <rect x="150" y="190" width="200" height="70" rx="10" fill="#0b1220" stroke="#253356" stroke-width="2"/>
+  <circle cx="165" cy="203" r="4" fill="#ff6b6b"/>
+  <circle cx="178" cy="203" r="4" fill="#ffd166"/>
+  <circle cx="191" cy="203" r="4" fill="#34d1a1"/>
+  <text x="163" y="225" font-family="monospace" font-size="12" fill="#9fb0c9">$ git commit -m</text>
+  <text x="163" y="242" font-family="monospace" font-size="12" fill="#34d1a1">"feat: nova landing page"</text>
+
+  <text x="250" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="22" fill="#ffffff">github.com/brc4rlos</text>
+</svg>
